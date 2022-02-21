@@ -1,0 +1,16 @@
+﻿@model IEnumerable<Sonal_1stMVC.Models.Location>
+@{
+}
+  <table class="table table-bordered">    
+      <tr>
+          <th>Locations</th>
+          <th>Details</th>
+      </tr>
+      @foreach(var location in Model)
+            {
+  <tr>
+      <td><td><a asp-action:"CustomerList" asp-controller="Customer" asp-route-Id="location.Id">@location.Placed </a>@location.Placed</td>
+      <td>@location.Details</td>
+  </tr>
+            }
+  </table>

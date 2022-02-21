@@ -1,0 +1,18 @@
+﻿@model IEnumerable<Sonal_1stMVC.Models.Customer>
+@{
+}
+<table class="table table-bordered">
+    <tr>
+        <th>Locations</th>
+        <th>Customers</th>
+    </tr>
+    @foreach (var Customer in Model)
+    {
+<tr>
+    <td>@Customer.Name</td>
+
+    
+    <td>@Customer.Email</td>
+</tr>
+    }
+</table>
